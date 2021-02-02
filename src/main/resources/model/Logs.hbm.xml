@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.model.Logs" table="Logs">
+		<id name="logId" column="logId">
+			<generator class="increment" />
+		</id>
+		<many-to-one name="data" class="com.model.Data" fetch="select">
+			<column name="contentId" not-null="true" />
+		</many-to-one>
+		<many-to-one name="employee" class="com.model.Employee" fetch="select">
+			<column name="empId" not-null="true" />
+		</many-to-one>
+		<property name= "action" />
+		<property name="timeOfAction" />
+	</class>
+</hibernate-mapping>

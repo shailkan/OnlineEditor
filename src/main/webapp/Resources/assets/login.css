@@ -1,0 +1,45 @@
+p
+{
+	margin-left : 15px;
+	color : #cc0000;
+	margin-top: 0px;
+}
+
+#logo
+{
+	background-image: url("images/shailkan-logo.png");
+	background-repeat: no-repeat;
+	background-size: 460px 125px;
+	width : 600px;
+	height : 125px;
+	margin-left : 350px;
+	margin-top : 40px;
+}
+
+#loginForm
+{
+	margin-left : 440px;
+	margin-top : 50px;
+}
+#loginForm h2
+{
+	padding-left : 10px;
+	color : #000000;
+}
+
+#login
+{
+ 	background-color : #e6e6e6;
+	width : 250px;
+	height : auto;
+}
+#formContents label
+{
+	font-size : 18px;
+}
+input
+{
+	margin-top : 10px;
+	margin-bottom : 10px;
+	width : 200px;
+}

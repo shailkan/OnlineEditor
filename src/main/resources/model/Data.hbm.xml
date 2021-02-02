@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.model.Data" table="Data">
+		<id name="contentId" column="contentId">
+			<generator class="increment" />
+		</id>
+		<property name="dateCreated" />
+		<many-to-one name="category" class="com.model.Category" fetch="select">
+			<column name="catId" not-null="true" />
+		</many-to-one>
+		<property name="title" />
+		<property name="content" length="4000" />
+		<property name="source" />
+		<property name="sessionId" />
+		<property name="status">
+			<type name = "org.hibernate.type.EnumType">
+				<param name="enumClass">com.model.Status</param>
+			</type>
+		</property>
+		<set name="Comments" table="Comments" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="contentId" not-null="true" />
+			</key>
+			<one-to-many class="com.model.Comments" />
+		</set>
+		<set name="Logs" table="Logs" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="contentId" not-null="true" />
+			</key>
+			<one-to-many class="com.model.Logs" />
+		</set>
+		<set name="Image" table="Image" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="contentId" not-null="true" />
+			</key>
+			<one-to-many class="com.model.Image" />
+		</set>
+	</class>
+</hibernate-mapping>

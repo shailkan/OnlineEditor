@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+<session-factory>
+ 
+<!-- Related to hibernate properties START -->
+<property name="show_sql">true </property>
+<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+<property name="hbm2ddl.auto">update</property>
+<property name="hibernate.enable_lazy_load_no_trans">true</property>
+<!-- Related to hibernate properties END -->
+ 
+ <!-- Related to mapping START -->
+<mapping resource="model/Category.hbm.xml" />
+<mapping resource="model/Comments.hbm.xml" />
+<mapping resource="model/Data.hbm.xml" />
+<mapping resource="model/Employee.hbm.xml" />
+<mapping resource="model/Logs.hbm.xml" />
+<mapping resource="model/Image.hbm.xml" />
+<!-- <mapping resource="com/model/Questions.hbm.xml" /> -->
+<!-- Related to the mapping END -->
+
+</session-factory>
+</hibernate-configuration>

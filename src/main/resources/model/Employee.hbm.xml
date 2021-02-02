@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.model.Employee" table="Employee">
+		<id name="empId" column="empId">
+			<generator class="assigned" />
+		</id>
+		<property name="role">
+			<type name = "org.hibernate.type.EnumType">
+				<param name="enumClass">com.model.Role</param>
+			</type>
+		</property>
+		<property name="username" />
+		<property name="password" />
+		<set name="Comments" table="Comments" cascade= "delete" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="empId" not-null="true" />
+			</key>
+			<one-to-many class="com.model.Comments" />
+		</set>
+		<set name="Logs" table="Logs" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="empId" not-null="true" />
+			</key>
+			<one-to-many class="com.model.Logs" />
+		</set>
+	</class>
+</hibernate-mapping>

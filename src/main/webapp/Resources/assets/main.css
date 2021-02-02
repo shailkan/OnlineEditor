@@ -1,0 +1,315 @@
+#header
+{
+	width : 100%;
+	height : 60px;
+    border: 5px #ffffff;
+    background: #ffffff; /* For browsers that do not support gradients */
+    border-radius : 10px;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    padding-left : 10px;
+    padding-top : 15px;
+}
+
+#logo
+{
+	background-image: url("images/shailkan-logo.png");
+	background-repeat: no-repeat;
+	background-size: 200px 50px;
+	width : 350px;
+	height : 60px;
+}
+
+#welcome
+{
+	font-weight : bolder;
+	color : #f78e1e;
+	float : left;
+}
+
+#date
+{
+	color : #000000;
+}
+
+#h3
+{
+	font-family: "Times New Roman";
+	font-size: 24px;
+	font-weight : bold; 	
+	margin-top : 2px;
+}
+
+#signout
+{
+	color : #0033cc;
+	text-decoration : underline;
+}
+
+
+.br
+{
+	clear: left;
+}
+
+.tabs
+{
+	border: none
+}
+
+.tabs ul
+{
+	padding-left : 10px;
+}
+
+.tabs ul li
+{
+	width : 100px;
+}
+
+.tabs ul li a
+{
+	font-size : 16px;
+	padding-left : 30px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.tabs .ui-tabs-active a
+{
+  color: #f78e1e;
+  font-weight: bold;
+}
+
+.tabs .ui-tabs-active
+{
+	background: #ffffff;
+}
+
+#form select,input[type="text"]
+{
+	margin-left : 10px;
+	width : 25%;
+	padding-left : 7px;
+	border-radius : 4px;
+	-webkit-border-radius: 15px; 
+    -moz-border-radius: 15px; 
+	border-width : 2px;
+	border-color : #404040;  
+}
+
+
+#form input[type="button"], input[type=submit]
+{
+    color : #ffffff;
+    border-radius : 5px;
+	-webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+    height : 30px; 
+}
+
+#form .buttons
+{
+	   width : 120px; 
+	   margin-top : 15px;
+	   margin-right : 15px; 
+		background: #404040; /* For browsers that do not support gradients */ 
+}
+
+#form label
+{
+	width : 70px;
+	margin-top : 10px;
+}
+
+.no-grid
+{
+	margin-left : 15px;
+}
+
+#comments textarea
+{
+	width : 100%;
+	height : 70px;
+	margin-top : 15px;
+}
+
+#comments
+{
+	height : auto;
+	max-height: 370px;
+	padding-left : 5px; 
+	padding-right : 10px;
+	background : #d9d9d9;
+	overflow-y: auto;
+	margin-top: 10px;
+}
+
+
+.post
+{
+	margin-top:2px; 
+	background: #404040; /* For browsers that do not support gradients */ 
+    width: 70px; 
+    margin-left : 195px; 
+}
+
+#images
+{
+	margin-top : -25px;
+	width : 250px;
+	height : 30px;
+	padding-top : 3px;
+}
+
+#images a
+{
+	color : #ff6600;
+	font-weight : bold;
+	text-decoration : underline;
+}
+
+a
+{
+	cursor : pointer;
+}
+
+#dialog-create
+{
+	background: #ffffff; /* For browsers that do not support gradients */ 
+}
+
+
+element.style
+{
+	width : 400px;
+	height : 300px;
+}
+
+#dialog-create input[type=text]
+{
+	margin-left : -3px;
+	margin-bottom : 10px;
+	width : 250px;
+}
+
+#dialog-create textarea
+{
+	width : 250px;
+	height : 100px;
+	border-radius : 15px;	
+	-webkit-border-radius: 15px; 
+    -moz-border-radius: 15px;
+    margin-bottom : 10px;
+    padding-left : 2px;
+    padding-top : 4px;
+    border-width : 2px;
+}
+
+#dialog-create input[type=submit]
+{
+	margin-left : 75px;
+	background : #333333;
+	width : 100px;
+	margin-bottom : 5px;
+}
+
+.warning
+{
+	background : #ff8080;
+}
+
+#category-dialog
+{
+	background: #d9d9d9; /* For browsers that do not support gradients */ 
+}
+
+#addCategory
+{
+	margin-left : 80px;
+	border-radius : 15px;	
+	-webkit-border-radius: 15px; 
+  	-moz-border-radius: 15px; 
+  	margin-top:15px;
+	background-color: #333333;
+	color : #ffffff;
+	height : 30px;
+  	width: 70px; 
+	font-weight: bold;
+}
+
+#newCategory
+{
+	width : 240px;
+	margin-top : 10px;
+}
+
+#postedComment
+{
+	height : auto;
+}
+
+.Edit
+{
+	margin-top:1px; 
+	background: #333333; /* For browsers that do not support gradients */ 
+    width: 70px; 
+    padding-left : 12px; 	
+}
+
+#commentText 
+{
+	padding-left : -5px;
+	word-wrap: break-word;
+	text-align : justify;
+}
+
+#view
+{
+	margin-top : 20px;
+}
+
+.contents
+{
+	width : 350px;
+}
+
+#back
+{
+	width : 160px;
+	height : 30px;
+	color : #0066ff;
+	font-size : 16px;
+	text-decoration : underline;
+}
+
+.statusString
+{
+	text-transform : capitalize;
+}
+
+.ui-widget-content a
+{
+	color : rgb(0, 136, 204);
+}
+
+.imgUpload .ui-widget-header
+{
+	background : #f78e1e;
+}
+
+#new-category
+{
+	margin-left: 10px;
+}
+
+#viewContent tr:nth-child(even) 
+{
+	background-color: #f2f2f2;
+}
+
+#viewContent
+{
+	margin-top: 7px;
+}

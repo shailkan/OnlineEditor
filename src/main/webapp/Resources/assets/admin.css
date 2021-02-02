@@ -1,0 +1,129 @@
+#formUser,#modifyForm
+{
+	margin-top : 30px;
+}
+
+#formUser input[type="text"],input[type="number"],select
+{
+	width : 300px;
+	height : 35px;
+	border-radius : 0px;
+	-webkit-border-radius: 0px; 
+    -moz-border-radius: 0px; 
+    margin-bottom : 30px;
+    margin-left: 10px;
+    padding-left: 7px;
+}
+
+input#eId::-webkit-inner-spin-button, 
+input#eId::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input#eId
+{
+	-moz-appearance:textfield;
+}
+
+#formUser input[type="submit"]
+{
+	width: 150px;
+	height: 40px;
+	margin-top : 20px;
+	margin-left: 10px;
+    padding-left: 7px;
+    font-weight: bold;
+}
+
+#formUser label
+{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.createDisabled
+{
+	background: #e6e6e6;
+	color: #737373 !important;
+}
+
+.createEnabled
+{
+	background: #f78e1e;
+	color: #ffffff !important;
+}
+
+#searchForm
+{
+	margin-top: 20px;	
+}
+
+#searchForm input[type=text]
+{
+	width: 30%;
+	margin-right: 10px;
+}
+
+#searchForm input[type=submit]
+{
+	width: 120px;
+}
+#userDetails,#noUsers
+{
+	margin-top: 30px;
+}
+
+#userDetails table
+{
+	border-collapse: collapse;
+	width: 70%;
+}
+
+#userDetails table, th, td
+{
+	border: 1px solid black;
+}
+
+#userDetails th,td
+{
+	width: 150px;
+	padding-left: 5px;
+}
+
+#userDetailsContent tr:nth-child(even) 
+{
+	background-color: #f2f2f2;
+}
+
+#userDetailsHeading
+{
+	height: 30px;
+	background: #5F5F5F;
+	color: #ffffff;
+}
+
+#modifyForm
+{
+	margin-left: 15px;
+}
+
+#modifyForm input[type=text],select
+{
+	margin-bottom: 30px;
+	height: 25px;
+}
+
+#modifyForm input[type=submit]
+{
+	width: 100px;
+    font-weight: bold;
+    height: 32px;
+    margin-top: 5px;
+}
+.tabs
+{
+	background: #ffffff;
+}
